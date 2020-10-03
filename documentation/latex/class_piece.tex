@@ -1,0 +1,203 @@
+\hypertarget{class_piece}{}\section{Piece Class Reference}
+\label{class_piece}\index{Piece@{Piece}}
+
+
+Inheritance diagram for Piece\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=184pt]{class_piece__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Piece\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=151pt]{class_piece__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_piece_a9ef73da286fed76e9cfe158bda2cf565}{Piece}} (\mbox{\hyperlink{class_coordinates}{Coordinates}} \&c, std\+::string s)
+\item 
+virtual void \mbox{\hyperlink{class_piece_a926422c76f09a9f0df374462ad8d13c1}{move}} (\mbox{\hyperlink{class_coordinates}{Coordinates}} \&p, \mbox{\hyperlink{class_board}{Board}} \&board)
+\item 
+virtual \mbox{\hyperlink{main_8cpp_a267937870648899c879128d3199195ec}{Coord\+Vec}} \mbox{\hyperlink{class_piece_aaf451c6593a2ed62f8ebe73ba13c0419}{possible\+\_\+moves}} (\mbox{\hyperlink{class_board}{Board}} \&board)
+\item 
+virtual void \mbox{\hyperlink{class_piece_a2f3261b1482b5635b6aa0bf67c588b98}{die}} (\mbox{\hyperlink{class_board}{Board}} \&board)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_coordinates}{Coordinates}} \mbox{\hyperlink{class_piece_a3a789618e64cb8139a2bc79f44bb6edb}{position}}
+\item 
+bool \mbox{\hyperlink{class_piece_a21b7b54849acd46163b4b6281b5b0e57}{is\+\_\+selected}}
+\item 
+bool \mbox{\hyperlink{class_piece_ab2ba8aa3a4471ff1a5400fe0617657cb}{is\+\_\+clicked}}
+\item 
+sf\+::\+Sprite \mbox{\hyperlink{class_piece_a65fa621a87983d21756c2d2d63e8189b}{active\+\_\+sprite}}
+\item 
+std\+::string \mbox{\hyperlink{class_piece_aceb5b0dda6aa7ac881abe103bb98ac7e}{name}}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_piece_ae756348a210f32b7eda542c76a5d666e}{display\+\_\+piece}} (\mbox{\hyperlink{class_piece}{Piece}} $\ast$, sf\+::\+Render\+Window \&win)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 67 of file main.\+cpp.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_piece_a9ef73da286fed76e9cfe158bda2cf565}\label{class_piece_a9ef73da286fed76e9cfe158bda2cf565}} 
+\index{Piece@{Piece}!Piece@{Piece}}
+\index{Piece@{Piece}!Piece@{Piece}}
+\subsubsection{\texorpdfstring{Piece()}{Piece()}}
+{\footnotesize\ttfamily Piece\+::\+Piece (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_coordinates}{Coordinates}} \&}]{c,  }\item[{std\+::string}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 70 of file main.\+cpp.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_piece_a2f3261b1482b5635b6aa0bf67c588b98}\label{class_piece_a2f3261b1482b5635b6aa0bf67c588b98}} 
+\index{Piece@{Piece}!die@{die}}
+\index{die@{die}!Piece@{Piece}}
+\subsubsection{\texorpdfstring{die()}{die()}}
+{\footnotesize\ttfamily virtual void Piece\+::die (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_board}{Board}} \&}]{board }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{class_bakhra_a851d699afa7dc2180e1aaf18bd6160f9}{Bakhra}}.
+
+
+
+Definition at line 76 of file main.\+cpp.
+
+\mbox{\Hypertarget{class_piece_a926422c76f09a9f0df374462ad8d13c1}\label{class_piece_a926422c76f09a9f0df374462ad8d13c1}} 
+\index{Piece@{Piece}!move@{move}}
+\index{move@{move}!Piece@{Piece}}
+\subsubsection{\texorpdfstring{move()}{move()}}
+{\footnotesize\ttfamily virtual void Piece\+::move (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_coordinates}{Coordinates}} \&}]{p,  }\item[{\mbox{\hyperlink{class_board}{Board}} \&}]{board }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{class_bakhra_ad70dced66c2d952d6268ae12d4ebd4f0}{Bakhra}}, and \mbox{\hyperlink{class_bagh_a31917bfad63a224e336bcdfaed2e5361}{Bagh}}.
+
+
+
+Definition at line 71 of file main.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=224pt]{class_piece_a926422c76f09a9f0df374462ad8d13c1_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_piece_aaf451c6593a2ed62f8ebe73ba13c0419}\label{class_piece_aaf451c6593a2ed62f8ebe73ba13c0419}} 
+\index{Piece@{Piece}!possible\_moves@{possible\_moves}}
+\index{possible\_moves@{possible\_moves}!Piece@{Piece}}
+\subsubsection{\texorpdfstring{possible\_moves()}{possible\_moves()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{main_8cpp_a267937870648899c879128d3199195ec}{Coord\+Vec}} Piece\+::possible\+\_\+moves (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_board}{Board}} \&}]{board }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{class_bakhra_a1df8a0eaf723807f8293d97edf701d46}{Bakhra}}, and \mbox{\hyperlink{class_bagh_ad98b7e209113ed6e5932ad732283b66a}{Bagh}}.
+
+
+
+Definition at line 72 of file main.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=270pt]{class_piece_aaf451c6593a2ed62f8ebe73ba13c0419_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{class_piece_ae756348a210f32b7eda542c76a5d666e}\label{class_piece_ae756348a210f32b7eda542c76a5d666e}} 
+\index{Piece@{Piece}!display\_piece@{display\_piece}}
+\index{display\_piece@{display\_piece}!Piece@{Piece}}
+\subsubsection{\texorpdfstring{display\_piece}{display\_piece}}
+{\footnotesize\ttfamily void display\+\_\+piece (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_piece}{Piece}} $\ast$}]{p,  }\item[{sf\+::\+Render\+Window \&}]{win }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Definition at line 264 of file main.\+cpp.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_piece_a65fa621a87983d21756c2d2d63e8189b}\label{class_piece_a65fa621a87983d21756c2d2d63e8189b}} 
+\index{Piece@{Piece}!active\_sprite@{active\_sprite}}
+\index{active\_sprite@{active\_sprite}!Piece@{Piece}}
+\subsubsection{\texorpdfstring{active\_sprite}{active\_sprite}}
+{\footnotesize\ttfamily sf\+::\+Sprite Piece\+::active\+\_\+sprite}
+
+
+
+Definition at line 80 of file main.\+cpp.
+
+\mbox{\Hypertarget{class_piece_ab2ba8aa3a4471ff1a5400fe0617657cb}\label{class_piece_ab2ba8aa3a4471ff1a5400fe0617657cb}} 
+\index{Piece@{Piece}!is\_clicked@{is\_clicked}}
+\index{is\_clicked@{is\_clicked}!Piece@{Piece}}
+\subsubsection{\texorpdfstring{is\_clicked}{is\_clicked}}
+{\footnotesize\ttfamily bool Piece\+::is\+\_\+clicked}
+
+
+
+Definition at line 79 of file main.\+cpp.
+
+\mbox{\Hypertarget{class_piece_a21b7b54849acd46163b4b6281b5b0e57}\label{class_piece_a21b7b54849acd46163b4b6281b5b0e57}} 
+\index{Piece@{Piece}!is\_selected@{is\_selected}}
+\index{is\_selected@{is\_selected}!Piece@{Piece}}
+\subsubsection{\texorpdfstring{is\_selected}{is\_selected}}
+{\footnotesize\ttfamily bool Piece\+::is\+\_\+selected}
+
+
+
+Definition at line 78 of file main.\+cpp.
+
+\mbox{\Hypertarget{class_piece_aceb5b0dda6aa7ac881abe103bb98ac7e}\label{class_piece_aceb5b0dda6aa7ac881abe103bb98ac7e}} 
+\index{Piece@{Piece}!name@{name}}
+\index{name@{name}!Piece@{Piece}}
+\subsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily std\+::string Piece\+::name}
+
+
+
+Definition at line 81 of file main.\+cpp.
+
+\mbox{\Hypertarget{class_piece_a3a789618e64cb8139a2bc79f44bb6edb}\label{class_piece_a3a789618e64cb8139a2bc79f44bb6edb}} 
+\index{Piece@{Piece}!position@{position}}
+\index{position@{position}!Piece@{Piece}}
+\subsubsection{\texorpdfstring{position}{position}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_coordinates}{Coordinates}} Piece\+::position}
+
+
+
+Definition at line 77 of file main.\+cpp.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+A\+:/\+Final\+\_\+project\+\_\+baag chaal/baagchal/\+Baagchal/\mbox{\hyperlink{main_8cpp}{main.\+cpp}}\end{DoxyCompactItemize}

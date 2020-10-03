@@ -1,0 +1,216 @@
+\hypertarget{class_bakhra}{}\section{Bakhra Class Reference}
+\label{class_bakhra}\index{Bakhra@{Bakhra}}
+
+
+Inheritance diagram for Bakhra\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=127pt]{class_bakhra__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Bakhra\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=151pt]{class_bakhra__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_bakhra_a89d45256f1c671abb089dd1a3cc3f0f0}{Bakhra}} (\mbox{\hyperlink{class_coordinates}{Coordinates}} \&c, \mbox{\hyperlink{class_board}{Board}} \&board)
+\item 
+void \mbox{\hyperlink{class_bakhra_a851d699afa7dc2180e1aaf18bd6160f9}{die}} (\mbox{\hyperlink{class_board}{Board}} \&board)
+\item 
+void \mbox{\hyperlink{class_bakhra_ad70dced66c2d952d6268ae12d4ebd4f0}{move}} (\mbox{\hyperlink{class_coordinates}{Coordinates}} \&p, \mbox{\hyperlink{class_board}{Board}} \&board)
+\item 
+\mbox{\hyperlink{main_8cpp_a267937870648899c879128d3199195ec}{Coord\+Vec}} \mbox{\hyperlink{class_bakhra_a1df8a0eaf723807f8293d97edf701d46}{possible\+\_\+moves}} (\mbox{\hyperlink{class_board}{Board}} \&board)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_coordinates}{Coordinates}} \mbox{\hyperlink{class_piece_a3a789618e64cb8139a2bc79f44bb6edb}{position}}
+\item 
+bool \mbox{\hyperlink{class_piece_a21b7b54849acd46163b4b6281b5b0e57}{is\+\_\+selected}}
+\item 
+bool \mbox{\hyperlink{class_piece_ab2ba8aa3a4471ff1a5400fe0617657cb}{is\+\_\+clicked}}
+\item 
+sf\+::\+Sprite \mbox{\hyperlink{class_piece_a65fa621a87983d21756c2d2d63e8189b}{active\+\_\+sprite}}
+\item 
+std\+::string \mbox{\hyperlink{class_piece_aceb5b0dda6aa7ac881abe103bb98ac7e}{name}}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static int \mbox{\hyperlink{class_bakhra_aaa910ecd4daa7e9544f714bcc59bea5c}{count}} = 0
+\item 
+static sf\+::\+Sprite \mbox{\hyperlink{class_bakhra_a4dce75f87c5302ed0f9960e1596a0683}{sprite}}
+\item 
+static sf\+::\+Sprite \mbox{\hyperlink{class_bakhra_a40815fd60319b4583844b8897cfdca32}{alter\+\_\+sprite}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 208 of file main.\+cpp.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_bakhra_a89d45256f1c671abb089dd1a3cc3f0f0}\label{class_bakhra_a89d45256f1c671abb089dd1a3cc3f0f0}} 
+\index{Bakhra@{Bakhra}!Bakhra@{Bakhra}}
+\index{Bakhra@{Bakhra}!Bakhra@{Bakhra}}
+\subsubsection{\texorpdfstring{Bakhra()}{Bakhra()}}
+{\footnotesize\ttfamily Bakhra\+::\+Bakhra (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_coordinates}{Coordinates}} \&}]{c,  }\item[{\mbox{\hyperlink{class_board}{Board}} \&}]{board }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 211 of file main.\+cpp.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_bakhra_a851d699afa7dc2180e1aaf18bd6160f9}\label{class_bakhra_a851d699afa7dc2180e1aaf18bd6160f9}} 
+\index{Bakhra@{Bakhra}!die@{die}}
+\index{die@{die}!Bakhra@{Bakhra}}
+\subsubsection{\texorpdfstring{die()}{die()}}
+{\footnotesize\ttfamily void Bakhra\+::die (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_board}{Board}} \&}]{board }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_piece_a2f3261b1482b5635b6aa0bf67c588b98}{Piece}}.
+
+
+
+Definition at line 218 of file main.\+cpp.
+
+\mbox{\Hypertarget{class_bakhra_ad70dced66c2d952d6268ae12d4ebd4f0}\label{class_bakhra_ad70dced66c2d952d6268ae12d4ebd4f0}} 
+\index{Bakhra@{Bakhra}!move@{move}}
+\index{move@{move}!Bakhra@{Bakhra}}
+\subsubsection{\texorpdfstring{move()}{move()}}
+{\footnotesize\ttfamily void Bakhra\+::move (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_coordinates}{Coordinates}} \&}]{p,  }\item[{\mbox{\hyperlink{class_board}{Board}} \&}]{board }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_piece_a926422c76f09a9f0df374462ad8d13c1}{Piece}}.
+
+
+
+Definition at line 226 of file main.\+cpp.
+
+\mbox{\Hypertarget{class_bakhra_a1df8a0eaf723807f8293d97edf701d46}\label{class_bakhra_a1df8a0eaf723807f8293d97edf701d46}} 
+\index{Bakhra@{Bakhra}!possible\_moves@{possible\_moves}}
+\index{possible\_moves@{possible\_moves}!Bakhra@{Bakhra}}
+\subsubsection{\texorpdfstring{possible\_moves()}{possible\_moves()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{main_8cpp_a267937870648899c879128d3199195ec}{Coord\+Vec}} Bakhra\+::possible\+\_\+moves (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_board}{Board}} \&}]{board }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_piece_aaf451c6593a2ed62f8ebe73ba13c0419}{Piece}}.
+
+
+
+Definition at line 232 of file main.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_bakhra_a1df8a0eaf723807f8293d97edf701d46_cgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_piece_a65fa621a87983d21756c2d2d63e8189b}\label{class_piece_a65fa621a87983d21756c2d2d63e8189b}} 
+\index{Bakhra@{Bakhra}!active\_sprite@{active\_sprite}}
+\index{active\_sprite@{active\_sprite}!Bakhra@{Bakhra}}
+\subsubsection{\texorpdfstring{active\_sprite}{active\_sprite}}
+{\footnotesize\ttfamily sf\+::\+Sprite Piece\+::active\+\_\+sprite\hspace{0.3cm}{\ttfamily [inherited]}}
+
+
+
+Definition at line 80 of file main.\+cpp.
+
+\mbox{\Hypertarget{class_bakhra_a40815fd60319b4583844b8897cfdca32}\label{class_bakhra_a40815fd60319b4583844b8897cfdca32}} 
+\index{Bakhra@{Bakhra}!alter\_sprite@{alter\_sprite}}
+\index{alter\_sprite@{alter\_sprite}!Bakhra@{Bakhra}}
+\subsubsection{\texorpdfstring{alter\_sprite}{alter\_sprite}}
+{\footnotesize\ttfamily sf\+::\+Sprite Bakhra\+::alter\+\_\+sprite\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 244 of file main.\+cpp.
+
+\mbox{\Hypertarget{class_bakhra_aaa910ecd4daa7e9544f714bcc59bea5c}\label{class_bakhra_aaa910ecd4daa7e9544f714bcc59bea5c}} 
+\index{Bakhra@{Bakhra}!count@{count}}
+\index{count@{count}!Bakhra@{Bakhra}}
+\subsubsection{\texorpdfstring{count}{count}}
+{\footnotesize\ttfamily int Bakhra\+::count = 0\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 242 of file main.\+cpp.
+
+\mbox{\Hypertarget{class_piece_ab2ba8aa3a4471ff1a5400fe0617657cb}\label{class_piece_ab2ba8aa3a4471ff1a5400fe0617657cb}} 
+\index{Bakhra@{Bakhra}!is\_clicked@{is\_clicked}}
+\index{is\_clicked@{is\_clicked}!Bakhra@{Bakhra}}
+\subsubsection{\texorpdfstring{is\_clicked}{is\_clicked}}
+{\footnotesize\ttfamily bool Piece\+::is\+\_\+clicked\hspace{0.3cm}{\ttfamily [inherited]}}
+
+
+
+Definition at line 79 of file main.\+cpp.
+
+\mbox{\Hypertarget{class_piece_a21b7b54849acd46163b4b6281b5b0e57}\label{class_piece_a21b7b54849acd46163b4b6281b5b0e57}} 
+\index{Bakhra@{Bakhra}!is\_selected@{is\_selected}}
+\index{is\_selected@{is\_selected}!Bakhra@{Bakhra}}
+\subsubsection{\texorpdfstring{is\_selected}{is\_selected}}
+{\footnotesize\ttfamily bool Piece\+::is\+\_\+selected\hspace{0.3cm}{\ttfamily [inherited]}}
+
+
+
+Definition at line 78 of file main.\+cpp.
+
+\mbox{\Hypertarget{class_piece_aceb5b0dda6aa7ac881abe103bb98ac7e}\label{class_piece_aceb5b0dda6aa7ac881abe103bb98ac7e}} 
+\index{Bakhra@{Bakhra}!name@{name}}
+\index{name@{name}!Bakhra@{Bakhra}}
+\subsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily std\+::string Piece\+::name\hspace{0.3cm}{\ttfamily [inherited]}}
+
+
+
+Definition at line 81 of file main.\+cpp.
+
+\mbox{\Hypertarget{class_piece_a3a789618e64cb8139a2bc79f44bb6edb}\label{class_piece_a3a789618e64cb8139a2bc79f44bb6edb}} 
+\index{Bakhra@{Bakhra}!position@{position}}
+\index{position@{position}!Bakhra@{Bakhra}}
+\subsubsection{\texorpdfstring{position}{position}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_coordinates}{Coordinates}} Piece\+::position\hspace{0.3cm}{\ttfamily [inherited]}}
+
+
+
+Definition at line 77 of file main.\+cpp.
+
+\mbox{\Hypertarget{class_bakhra_a4dce75f87c5302ed0f9960e1596a0683}\label{class_bakhra_a4dce75f87c5302ed0f9960e1596a0683}} 
+\index{Bakhra@{Bakhra}!sprite@{sprite}}
+\index{sprite@{sprite}!Bakhra@{Bakhra}}
+\subsubsection{\texorpdfstring{sprite}{sprite}}
+{\footnotesize\ttfamily sf\+::\+Sprite Bakhra\+::sprite\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 243 of file main.\+cpp.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+A\+:/\+Final\+\_\+project\+\_\+baag chaal/baagchal/\+Baagchal/\mbox{\hyperlink{main_8cpp}{main.\+cpp}}\end{DoxyCompactItemize}

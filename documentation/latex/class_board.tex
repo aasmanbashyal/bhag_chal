@@ -1,0 +1,175 @@
+\hypertarget{class_board}{}\section{Board Class Reference}
+\label{class_board}\index{Board@{Board}}
+
+
+Collaboration diagram for Board\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=198pt]{class_board__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_board_a9ee491d4fea680cf69b033374a9fdfcb}{Board}} ()
+\item 
+\mbox{\hyperlink{main_8cpp_a267937870648899c879128d3199195ec}{Coord\+Vec}} \mbox{\hyperlink{class_board_a50777989564d829d24dcd8aa63816dcb}{possible\+\_\+places}} (const \mbox{\hyperlink{class_coordinates}{Coordinates}} \&p1)
+\item 
+bool \mbox{\hyperlink{class_board_a386f2e5861a55976ec6a4e94d4cae38b}{is\+\_\+game\+\_\+over}} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_board_a60287104e28c94cbc118266bd30cf407}{occupancy}} \mbox{[}5\mbox{]}\mbox{[}5\mbox{]}
+\item 
+\mbox{\hyperlink{main_8cpp_a1fee34cd51bd05e4c433a7e94ed397db}{Pos}} \mbox{\hyperlink{class_board_a13f6c1dda93fa552f0620b7c0867df4e}{b}} \mbox{[}5\mbox{]}\mbox{[}5\mbox{]}
+\item 
+std\+::vector$<$ std\+::vector$<$ \mbox{\hyperlink{class_piece}{Piece}} $\ast$ $>$ $>$ \mbox{\hyperlink{class_board_a1f0cd782b34c4facdb9210e5c3982cba}{pieceslist}}
+\item 
+\mbox{\hyperlink{class_piece}{Piece}} $\ast$ \mbox{\hyperlink{class_board_ad109cf70d4d3d8cb6ea505cdfe3a3bb6}{last\+\_\+clicked\+\_\+piece}}
+\item 
+sf\+::\+Sprite \mbox{\hyperlink{class_board_a5f44ad90ccf01fa76ed8095b39f23b9d}{sprite}}
+\item 
+int \mbox{\hyperlink{class_board_ab9b098ed92381fadccbdfa1e3cb273e8}{dead\+\_\+bakhras}}
+\item 
+std\+::string \mbox{\hyperlink{class_board_a6c7f6acc261614facb3768ca8712d9ba}{winner}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 86 of file main.\+cpp.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_board_a9ee491d4fea680cf69b033374a9fdfcb}\label{class_board_a9ee491d4fea680cf69b033374a9fdfcb}} 
+\index{Board@{Board}!Board@{Board}}
+\index{Board@{Board}!Board@{Board}}
+\subsubsection{\texorpdfstring{Board()}{Board()}}
+{\footnotesize\ttfamily Board\+::\+Board (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 89 of file main.\+cpp.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_board_a386f2e5861a55976ec6a4e94d4cae38b}\label{class_board_a386f2e5861a55976ec6a4e94d4cae38b}} 
+\index{Board@{Board}!is\_game\_over@{is\_game\_over}}
+\index{is\_game\_over@{is\_game\_over}!Board@{Board}}
+\subsubsection{\texorpdfstring{is\_game\_over()}{is\_game\_over()}}
+{\footnotesize\ttfamily bool Board\+::is\+\_\+game\+\_\+over (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 102 of file main.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=261pt]{class_board_a386f2e5861a55976ec6a4e94d4cae38b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_board_a50777989564d829d24dcd8aa63816dcb}\label{class_board_a50777989564d829d24dcd8aa63816dcb}} 
+\index{Board@{Board}!possible\_places@{possible\_places}}
+\index{possible\_places@{possible\_places}!Board@{Board}}
+\subsubsection{\texorpdfstring{possible\_places()}{possible\_places()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{main_8cpp_a267937870648899c879128d3199195ec}{Coord\+Vec}} Board\+::possible\+\_\+places (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_coordinates}{Coordinates}} \&}]{p1 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 90 of file main.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_board_a50777989564d829d24dcd8aa63816dcb_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_board_a13f6c1dda93fa552f0620b7c0867df4e}\label{class_board_a13f6c1dda93fa552f0620b7c0867df4e}} 
+\index{Board@{Board}!b@{b}}
+\index{b@{b}!Board@{Board}}
+\subsubsection{\texorpdfstring{b}{b}}
+{\footnotesize\ttfamily \mbox{\hyperlink{main_8cpp_a1fee34cd51bd05e4c433a7e94ed397db}{Pos}} Board\+::b\mbox{[}5\mbox{]}\mbox{[}5\mbox{]}}
+
+
+
+Definition at line 122 of file main.\+cpp.
+
+\mbox{\Hypertarget{class_board_ab9b098ed92381fadccbdfa1e3cb273e8}\label{class_board_ab9b098ed92381fadccbdfa1e3cb273e8}} 
+\index{Board@{Board}!dead\_bakhras@{dead\_bakhras}}
+\index{dead\_bakhras@{dead\_bakhras}!Board@{Board}}
+\subsubsection{\texorpdfstring{dead\_bakhras}{dead\_bakhras}}
+{\footnotesize\ttfamily int Board\+::dead\+\_\+bakhras}
+
+
+
+Definition at line 126 of file main.\+cpp.
+
+\mbox{\Hypertarget{class_board_ad109cf70d4d3d8cb6ea505cdfe3a3bb6}\label{class_board_ad109cf70d4d3d8cb6ea505cdfe3a3bb6}} 
+\index{Board@{Board}!last\_clicked\_piece@{last\_clicked\_piece}}
+\index{last\_clicked\_piece@{last\_clicked\_piece}!Board@{Board}}
+\subsubsection{\texorpdfstring{last\_clicked\_piece}{last\_clicked\_piece}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_piece}{Piece}}$\ast$ Board\+::last\+\_\+clicked\+\_\+piece}
+
+
+
+Definition at line 124 of file main.\+cpp.
+
+\mbox{\Hypertarget{class_board_a60287104e28c94cbc118266bd30cf407}\label{class_board_a60287104e28c94cbc118266bd30cf407}} 
+\index{Board@{Board}!occupancy@{occupancy}}
+\index{occupancy@{occupancy}!Board@{Board}}
+\subsubsection{\texorpdfstring{occupancy}{occupancy}}
+{\footnotesize\ttfamily bool Board\+::occupancy\mbox{[}5\mbox{]}\mbox{[}5\mbox{]}}
+
+
+
+Definition at line 121 of file main.\+cpp.
+
+\mbox{\Hypertarget{class_board_a1f0cd782b34c4facdb9210e5c3982cba}\label{class_board_a1f0cd782b34c4facdb9210e5c3982cba}} 
+\index{Board@{Board}!pieceslist@{pieceslist}}
+\index{pieceslist@{pieceslist}!Board@{Board}}
+\subsubsection{\texorpdfstring{pieceslist}{pieceslist}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::vector$<$\mbox{\hyperlink{class_piece}{Piece}} $\ast$$>$ $>$ Board\+::pieceslist}
+
+
+
+Definition at line 123 of file main.\+cpp.
+
+\mbox{\Hypertarget{class_board_a5f44ad90ccf01fa76ed8095b39f23b9d}\label{class_board_a5f44ad90ccf01fa76ed8095b39f23b9d}} 
+\index{Board@{Board}!sprite@{sprite}}
+\index{sprite@{sprite}!Board@{Board}}
+\subsubsection{\texorpdfstring{sprite}{sprite}}
+{\footnotesize\ttfamily sf\+::\+Sprite Board\+::sprite}
+
+
+
+Definition at line 125 of file main.\+cpp.
+
+\mbox{\Hypertarget{class_board_a6c7f6acc261614facb3768ca8712d9ba}\label{class_board_a6c7f6acc261614facb3768ca8712d9ba}} 
+\index{Board@{Board}!winner@{winner}}
+\index{winner@{winner}!Board@{Board}}
+\subsubsection{\texorpdfstring{winner}{winner}}
+{\footnotesize\ttfamily std\+::string Board\+::winner}
+
+
+
+Definition at line 127 of file main.\+cpp.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+A\+:/\+Final\+\_\+project\+\_\+baag chaal/baagchal/\+Baagchal/\mbox{\hyperlink{main_8cpp}{main.\+cpp}}\end{DoxyCompactItemize}

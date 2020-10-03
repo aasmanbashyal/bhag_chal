@@ -1,0 +1,224 @@
+\hypertarget{class_bagh}{}\section{Bagh Class Reference}
+\label{class_bagh}\index{Bagh@{Bagh}}
+
+
+Inheritance diagram for Bagh\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=121pt]{class_bagh__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Bagh\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=151pt]{class_bagh__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_bagh_a0fb9fd6062c5eaf058b0ea6bf0d53336}{Bagh}} (\mbox{\hyperlink{class_coordinates}{Coordinates}} \&c, \mbox{\hyperlink{class_board}{Board}} \&board)
+\item 
+void \mbox{\hyperlink{class_bagh_a31917bfad63a224e336bcdfaed2e5361}{move}} (\mbox{\hyperlink{class_coordinates}{Coordinates}} \&p, \mbox{\hyperlink{class_board}{Board}} \&board)
+\item 
+\mbox{\hyperlink{main_8cpp_a267937870648899c879128d3199195ec}{Coord\+Vec}} \mbox{\hyperlink{class_bagh_ad98b7e209113ed6e5932ad732283b66a}{possible\+\_\+moves}} (\mbox{\hyperlink{class_board}{Board}} \&board)
+\item 
+virtual void \mbox{\hyperlink{class_piece_a2f3261b1482b5635b6aa0bf67c588b98}{die}} (\mbox{\hyperlink{class_board}{Board}} \&board)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_coordinates}{Coordinates}} \mbox{\hyperlink{class_piece_a3a789618e64cb8139a2bc79f44bb6edb}{position}}
+\item 
+bool \mbox{\hyperlink{class_piece_a21b7b54849acd46163b4b6281b5b0e57}{is\+\_\+selected}}
+\item 
+bool \mbox{\hyperlink{class_piece_ab2ba8aa3a4471ff1a5400fe0617657cb}{is\+\_\+clicked}}
+\item 
+sf\+::\+Sprite \mbox{\hyperlink{class_piece_a65fa621a87983d21756c2d2d63e8189b}{active\+\_\+sprite}}
+\item 
+std\+::string \mbox{\hyperlink{class_piece_aceb5b0dda6aa7ac881abe103bb98ac7e}{name}}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static int \mbox{\hyperlink{class_bagh_a86a681a06d8a497159f08dceb735c5e9}{count}} = 0
+\item 
+static sf\+::\+Sprite \mbox{\hyperlink{class_bagh_ad8af00ee831b82cea1df1f801a1d77c7}{sprite}}
+\item 
+static sf\+::\+Sprite \mbox{\hyperlink{class_bagh_a74e32ec82d74640ab6ae7e0fbf5d05c4}{alter\+\_\+sprite}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 131 of file main.\+cpp.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_bagh_a0fb9fd6062c5eaf058b0ea6bf0d53336}\label{class_bagh_a0fb9fd6062c5eaf058b0ea6bf0d53336}} 
+\index{Bagh@{Bagh}!Bagh@{Bagh}}
+\index{Bagh@{Bagh}!Bagh@{Bagh}}
+\subsubsection{\texorpdfstring{Bagh()}{Bagh()}}
+{\footnotesize\ttfamily Bagh\+::\+Bagh (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_coordinates}{Coordinates}} \&}]{c,  }\item[{\mbox{\hyperlink{class_board}{Board}} \&}]{board }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 134 of file main.\+cpp.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_piece_a2f3261b1482b5635b6aa0bf67c588b98}\label{class_piece_a2f3261b1482b5635b6aa0bf67c588b98}} 
+\index{Bagh@{Bagh}!die@{die}}
+\index{die@{die}!Bagh@{Bagh}}
+\subsubsection{\texorpdfstring{die()}{die()}}
+{\footnotesize\ttfamily virtual void Piece\+::die (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_board}{Board}} \&}]{board }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}, {\ttfamily [inherited]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{class_bakhra_a851d699afa7dc2180e1aaf18bd6160f9}{Bakhra}}.
+
+
+
+Definition at line 76 of file main.\+cpp.
+
+\mbox{\Hypertarget{class_bagh_a31917bfad63a224e336bcdfaed2e5361}\label{class_bagh_a31917bfad63a224e336bcdfaed2e5361}} 
+\index{Bagh@{Bagh}!move@{move}}
+\index{move@{move}!Bagh@{Bagh}}
+\subsubsection{\texorpdfstring{move()}{move()}}
+{\footnotesize\ttfamily void Bagh\+::move (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_coordinates}{Coordinates}} \&}]{p,  }\item[{\mbox{\hyperlink{class_board}{Board}} \&}]{board }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_piece_a926422c76f09a9f0df374462ad8d13c1}{Piece}}.
+
+
+
+Definition at line 142 of file main.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=302pt]{class_bagh_a31917bfad63a224e336bcdfaed2e5361_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_bagh_ad98b7e209113ed6e5932ad732283b66a}\label{class_bagh_ad98b7e209113ed6e5932ad732283b66a}} 
+\index{Bagh@{Bagh}!possible\_moves@{possible\_moves}}
+\index{possible\_moves@{possible\_moves}!Bagh@{Bagh}}
+\subsubsection{\texorpdfstring{possible\_moves()}{possible\_moves()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{main_8cpp_a267937870648899c879128d3199195ec}{Coord\+Vec}} Bagh\+::possible\+\_\+moves (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_board}{Board}} \&}]{board }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_piece_aaf451c6593a2ed62f8ebe73ba13c0419}{Piece}}.
+
+
+
+Definition at line 173 of file main.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=348pt]{class_bagh_ad98b7e209113ed6e5932ad732283b66a_cgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_piece_a65fa621a87983d21756c2d2d63e8189b}\label{class_piece_a65fa621a87983d21756c2d2d63e8189b}} 
+\index{Bagh@{Bagh}!active\_sprite@{active\_sprite}}
+\index{active\_sprite@{active\_sprite}!Bagh@{Bagh}}
+\subsubsection{\texorpdfstring{active\_sprite}{active\_sprite}}
+{\footnotesize\ttfamily sf\+::\+Sprite Piece\+::active\+\_\+sprite\hspace{0.3cm}{\ttfamily [inherited]}}
+
+
+
+Definition at line 80 of file main.\+cpp.
+
+\mbox{\Hypertarget{class_bagh_a74e32ec82d74640ab6ae7e0fbf5d05c4}\label{class_bagh_a74e32ec82d74640ab6ae7e0fbf5d05c4}} 
+\index{Bagh@{Bagh}!alter\_sprite@{alter\_sprite}}
+\index{alter\_sprite@{alter\_sprite}!Bagh@{Bagh}}
+\subsubsection{\texorpdfstring{alter\_sprite}{alter\_sprite}}
+{\footnotesize\ttfamily sf\+::\+Sprite Bagh\+::alter\+\_\+sprite\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 205 of file main.\+cpp.
+
+\mbox{\Hypertarget{class_bagh_a86a681a06d8a497159f08dceb735c5e9}\label{class_bagh_a86a681a06d8a497159f08dceb735c5e9}} 
+\index{Bagh@{Bagh}!count@{count}}
+\index{count@{count}!Bagh@{Bagh}}
+\subsubsection{\texorpdfstring{count}{count}}
+{\footnotesize\ttfamily int Bagh\+::count = 0\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 203 of file main.\+cpp.
+
+\mbox{\Hypertarget{class_piece_ab2ba8aa3a4471ff1a5400fe0617657cb}\label{class_piece_ab2ba8aa3a4471ff1a5400fe0617657cb}} 
+\index{Bagh@{Bagh}!is\_clicked@{is\_clicked}}
+\index{is\_clicked@{is\_clicked}!Bagh@{Bagh}}
+\subsubsection{\texorpdfstring{is\_clicked}{is\_clicked}}
+{\footnotesize\ttfamily bool Piece\+::is\+\_\+clicked\hspace{0.3cm}{\ttfamily [inherited]}}
+
+
+
+Definition at line 79 of file main.\+cpp.
+
+\mbox{\Hypertarget{class_piece_a21b7b54849acd46163b4b6281b5b0e57}\label{class_piece_a21b7b54849acd46163b4b6281b5b0e57}} 
+\index{Bagh@{Bagh}!is\_selected@{is\_selected}}
+\index{is\_selected@{is\_selected}!Bagh@{Bagh}}
+\subsubsection{\texorpdfstring{is\_selected}{is\_selected}}
+{\footnotesize\ttfamily bool Piece\+::is\+\_\+selected\hspace{0.3cm}{\ttfamily [inherited]}}
+
+
+
+Definition at line 78 of file main.\+cpp.
+
+\mbox{\Hypertarget{class_piece_aceb5b0dda6aa7ac881abe103bb98ac7e}\label{class_piece_aceb5b0dda6aa7ac881abe103bb98ac7e}} 
+\index{Bagh@{Bagh}!name@{name}}
+\index{name@{name}!Bagh@{Bagh}}
+\subsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily std\+::string Piece\+::name\hspace{0.3cm}{\ttfamily [inherited]}}
+
+
+
+Definition at line 81 of file main.\+cpp.
+
+\mbox{\Hypertarget{class_piece_a3a789618e64cb8139a2bc79f44bb6edb}\label{class_piece_a3a789618e64cb8139a2bc79f44bb6edb}} 
+\index{Bagh@{Bagh}!position@{position}}
+\index{position@{position}!Bagh@{Bagh}}
+\subsubsection{\texorpdfstring{position}{position}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_coordinates}{Coordinates}} Piece\+::position\hspace{0.3cm}{\ttfamily [inherited]}}
+
+
+
+Definition at line 77 of file main.\+cpp.
+
+\mbox{\Hypertarget{class_bagh_ad8af00ee831b82cea1df1f801a1d77c7}\label{class_bagh_ad8af00ee831b82cea1df1f801a1d77c7}} 
+\index{Bagh@{Bagh}!sprite@{sprite}}
+\index{sprite@{sprite}!Bagh@{Bagh}}
+\subsubsection{\texorpdfstring{sprite}{sprite}}
+{\footnotesize\ttfamily sf\+::\+Sprite Bagh\+::sprite\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 204 of file main.\+cpp.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+A\+:/\+Final\+\_\+project\+\_\+baag chaal/baagchal/\+Baagchal/\mbox{\hyperlink{main_8cpp}{main.\+cpp}}\end{DoxyCompactItemize}

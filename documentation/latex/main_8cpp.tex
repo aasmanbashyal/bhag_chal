@@ -1,0 +1,177 @@
+\hypertarget{main_8cpp}{}\section{A\+:/\+Final\+\_\+project\+\_\+baag chaal/baagchal/\+Baagchal/main.cpp File Reference}
+\label{main_8cpp}\index{A:/Final\_project\_baag chaal/baagchal/Baagchal/main.cpp@{A:/Final\_project\_baag chaal/baagchal/Baagchal/main.cpp}}
+{\ttfamily \#include $<$S\+F\+M\+L/\+Graphics.\+hpp$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$bitset$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+Include dependency graph for main.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_coordinates}{Coordinates}}
+\item 
+class \mbox{\hyperlink{class_piece}{Piece}}
+\item 
+class \mbox{\hyperlink{class_board}{Board}}
+\item 
+class \mbox{\hyperlink{class_bagh}{Bagh}}
+\item 
+class \mbox{\hyperlink{class_bakhra}{Bakhra}}
+\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespacescr}{scr}}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{main_8cpp_a6cee82bf70d1878de6abb05397599847}{X\+S\+H\+I\+FT}}~200
+\item 
+\#define \mbox{\hyperlink{main_8cpp_a21beb62e9c7bda3b8e4317a1b224d914}{Y\+S\+H\+I\+FT}}~150
+\item 
+\#define \mbox{\hyperlink{main_8cpp_a0672d674e6fed420785cdc363ae61d32}{X\+M\+U\+LT}}~150
+\item 
+\#define \mbox{\hyperlink{main_8cpp_a4889b162cc31654cc7044501b848e5c3}{Y\+M\+U\+LT}}~150
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::bitset$<$ 8 $>$ \mbox{\hyperlink{main_8cpp_a1fee34cd51bd05e4c433a7e94ed397db}{Pos}}
+\item 
+typedef std\+::vector$<$ \mbox{\hyperlink{class_coordinates}{Coordinates}} $>$ \mbox{\hyperlink{main_8cpp_a267937870648899c879128d3199195ec}{Coord\+Vec}}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_coordinates}{Coordinates}} \mbox{\hyperlink{main_8cpp_abbccb87164acf085889370a5f9015f67}{operator+}} (\mbox{\hyperlink{class_coordinates}{Coordinates}} lhs, const \mbox{\hyperlink{class_coordinates}{Coordinates}} \&rhs)
+\item 
+\mbox{\hyperlink{class_coordinates}{Coordinates}} \mbox{\hyperlink{main_8cpp_a7822a0e23d5b15b1bede1267e188369a}{operator-\/}} (\mbox{\hyperlink{class_coordinates}{Coordinates}} lhs, const \mbox{\hyperlink{class_coordinates}{Coordinates}} \&rhs)
+\item 
+void \mbox{\hyperlink{namespacescr_a7b91c934af8545eebc19222fe7a756ab}{scr\+::switch\+\_\+sprite}} (\mbox{\hyperlink{class_piece}{Piece}} $\ast$p)
+\item 
+void \mbox{\hyperlink{namespacescr_ab6ad379b890e9ea5edf6211b4ea1e160}{scr\+::display\+\_\+piece}} (\mbox{\hyperlink{class_piece}{Piece}} $\ast$p, sf\+::\+Render\+Window \&win)
+\item 
+void \mbox{\hyperlink{namespacescr_afbf344f09162239b14701105f01e1671}{scr\+::highlight\+\_\+position}} (const \mbox{\hyperlink{class_coordinates}{Coordinates}} \&p, sf\+::\+Render\+Window \&window, sf\+::\+Color color=sf\+::\+Color(0, 255, 0, 200))
+\item 
+bool \mbox{\hyperlink{namespacescr_a6cf89150981812b9b3ed4144462f12d6}{scr\+::click\+\_\+position}} (const \mbox{\hyperlink{class_coordinates}{Coordinates}} \&p, sf\+::\+Render\+Window \&window, sf\+::\+Event \&event)
+\item 
+bool \mbox{\hyperlink{namespacescr_a10f589a004aed2b681476e3cf0c02bfb}{scr\+::mouse\+\_\+over}} (\mbox{\hyperlink{class_piece}{Piece}} $\ast$p, sf\+::\+Render\+Window \&window)
+\item 
+int \mbox{\hyperlink{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{main_8cpp_a0672d674e6fed420785cdc363ae61d32}\label{main_8cpp_a0672d674e6fed420785cdc363ae61d32}} 
+\index{main.cpp@{main.cpp}!XMULT@{XMULT}}
+\index{XMULT@{XMULT}!main.cpp@{main.cpp}}
+\subsubsection{\texorpdfstring{XMULT}{XMULT}}
+{\footnotesize\ttfamily \#define X\+M\+U\+LT~150}
+
+
+
+Definition at line 8 of file main.\+cpp.
+
+\mbox{\Hypertarget{main_8cpp_a6cee82bf70d1878de6abb05397599847}\label{main_8cpp_a6cee82bf70d1878de6abb05397599847}} 
+\index{main.cpp@{main.cpp}!XSHIFT@{XSHIFT}}
+\index{XSHIFT@{XSHIFT}!main.cpp@{main.cpp}}
+\subsubsection{\texorpdfstring{XSHIFT}{XSHIFT}}
+{\footnotesize\ttfamily \#define X\+S\+H\+I\+FT~200}
+
+
+
+Definition at line 6 of file main.\+cpp.
+
+\mbox{\Hypertarget{main_8cpp_a4889b162cc31654cc7044501b848e5c3}\label{main_8cpp_a4889b162cc31654cc7044501b848e5c3}} 
+\index{main.cpp@{main.cpp}!YMULT@{YMULT}}
+\index{YMULT@{YMULT}!main.cpp@{main.cpp}}
+\subsubsection{\texorpdfstring{YMULT}{YMULT}}
+{\footnotesize\ttfamily \#define Y\+M\+U\+LT~150}
+
+
+
+Definition at line 9 of file main.\+cpp.
+
+\mbox{\Hypertarget{main_8cpp_a21beb62e9c7bda3b8e4317a1b224d914}\label{main_8cpp_a21beb62e9c7bda3b8e4317a1b224d914}} 
+\index{main.cpp@{main.cpp}!YSHIFT@{YSHIFT}}
+\index{YSHIFT@{YSHIFT}!main.cpp@{main.cpp}}
+\subsubsection{\texorpdfstring{YSHIFT}{YSHIFT}}
+{\footnotesize\ttfamily \#define Y\+S\+H\+I\+FT~150}
+
+
+
+Definition at line 7 of file main.\+cpp.
+
+
+
+\subsection{Typedef Documentation}
+\mbox{\Hypertarget{main_8cpp_a267937870648899c879128d3199195ec}\label{main_8cpp_a267937870648899c879128d3199195ec}} 
+\index{main.cpp@{main.cpp}!CoordVec@{CoordVec}}
+\index{CoordVec@{CoordVec}!main.cpp@{main.cpp}}
+\subsubsection{\texorpdfstring{CoordVec}{CoordVec}}
+{\footnotesize\ttfamily typedef std\+::vector$<$\mbox{\hyperlink{class_coordinates}{Coordinates}}$>$ \mbox{\hyperlink{main_8cpp_a267937870648899c879128d3199195ec}{Coord\+Vec}}}
+
+
+
+Definition at line 65 of file main.\+cpp.
+
+\mbox{\Hypertarget{main_8cpp_a1fee34cd51bd05e4c433a7e94ed397db}\label{main_8cpp_a1fee34cd51bd05e4c433a7e94ed397db}} 
+\index{main.cpp@{main.cpp}!Pos@{Pos}}
+\index{Pos@{Pos}!main.cpp@{main.cpp}}
+\subsubsection{\texorpdfstring{Pos}{Pos}}
+{\footnotesize\ttfamily typedef std\+::bitset$<$8$>$ \mbox{\hyperlink{main_8cpp_a1fee34cd51bd05e4c433a7e94ed397db}{Pos}}}
+
+
+
+Definition at line 11 of file main.\+cpp.
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+\index{main.cpp@{main.cpp}!main@{main}}
+\index{main@{main}!main.cpp@{main.cpp}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 321 of file main.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{main_8cpp_abbccb87164acf085889370a5f9015f67}\label{main_8cpp_abbccb87164acf085889370a5f9015f67}} 
+\index{main.cpp@{main.cpp}!operator+@{operator+}}
+\index{operator+@{operator+}!main.cpp@{main.cpp}}
+\subsubsection{\texorpdfstring{operator+()}{operator+()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_coordinates}{Coordinates}} operator+ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_coordinates}{Coordinates}}}]{lhs,  }\item[{const \mbox{\hyperlink{class_coordinates}{Coordinates}} \&}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 53 of file main.\+cpp.
+
+\mbox{\Hypertarget{main_8cpp_a7822a0e23d5b15b1bede1267e188369a}\label{main_8cpp_a7822a0e23d5b15b1bede1267e188369a}} 
+\index{main.cpp@{main.cpp}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!main.cpp@{main.cpp}}
+\subsubsection{\texorpdfstring{operator-\/()}{operator-()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_coordinates}{Coordinates}} operator-\/ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_coordinates}{Coordinates}}}]{lhs,  }\item[{const \mbox{\hyperlink{class_coordinates}{Coordinates}} \&}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 59 of file main.\+cpp.
+
